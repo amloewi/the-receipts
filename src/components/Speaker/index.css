@@ -1,0 +1,70 @@
+.table-row {
+  border-bottom: 1px solid #cccccc;
+  min-height: 60px;
+  display: grid;
+  grid-template-columns: minmax(70px, auto) minmax(150px, auto) minmax(150px, auto) minmax(150px, auto) minmax(100px, auto);
+  align-items: center;
+}
+
+.table-row button {
+  padding: 7px 10px;
+  margin: 0 10px;
+}
+
+@media (max-width: 600px) {
+  .table-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .table-row > * {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 10px 0;
+  }
+
+  .table-row .name {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .table-row .col-time {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .table-row button {
+    padding: 7px 10px;
+    margin: 5px auto;
+    width: 200px;
+  }
+}
+
+.col-time {
+  margin: 0 auto;
+  width: 100px;
+  text-align: center;
+}
+
+.talking .btn-is-talking {
+  background: rgb(0, 252, 65);
+}
+
+.talking .col-time {
+  font-size: 20px;
+}
+
+.btn-is-talking {
+  background-color: #cccccc;
+}
+
+.btn-interrupted {
+  background-color: #f3aa5d;
+}
+
+.btn-asked-question {
+  background-color: #4a86e8;
+}

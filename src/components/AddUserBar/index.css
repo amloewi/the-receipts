@@ -1,0 +1,32 @@
+.add-user-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-add {
+  background-color: #4987e8;
+  margin: 0 10px;
+  height: 40px;
+  width: 100px;
+}
+
+.first-name {
+  border: 1px solid #666666;
+  border-radius: 5px;
+  width: 500px;
+  height: 40px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+/*@media (max-width: 520px) {*/
+/*  .first-name {*/
+/*    width: auto;*/
+/*  }*/
+
+/*  .first-name::placeholder {*/
+/*    font-size: 12px;*/
+/*  }*/
+/*}*/
+

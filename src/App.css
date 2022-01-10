@@ -1,0 +1,41 @@
+.page-wrapper {
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 650px;
+}
+
+.btn-stop-all-timers {
+  background-color: #ff0000;
+  padding: 10px 30px;
+  margin-bottom: 30px;
+}
+
+.table-wrapper {
+  cursor: grab;
+  margin: 15px 0;
+}
+
+.chart-wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.charts {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+  .charts {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
