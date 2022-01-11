@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "talktective",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +12,8 @@
     "@types/react-dom": "^17.0.0",
     "chart.js": "^3.6.2",
     "chartjs-plugin-datalabels": "^2.0.0",
+    "express": "^4.17.2",
+    "gzipper": "^6.2.1",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-chartjs-2": "^4.0.0",
@@ -23,8 +25,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "gzipper compress ./build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "serve": "node serve.js"
   },
   "eslintConfig": {
     "extends": [
