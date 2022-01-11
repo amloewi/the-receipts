@@ -153,9 +153,8 @@ class App extends Component<Props, State> {
               STOP ALL TIMERS
             </button>
           ) : null}
-
-          {this.renderCharts()}
         </div>
+        {this.renderCharts()}
       </div>
     );
   }

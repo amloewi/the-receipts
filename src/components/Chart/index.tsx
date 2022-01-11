@@ -37,8 +37,13 @@ export default function Chart(props: Props) {
     legend: {
       display: false,
     },
+    responsive: true,
     scales: {
       x: {
+        ticks: {
+          maxRotation: 90,
+          autoSkip: false
+        },
         grid: {
           display: false,
         },
@@ -51,7 +56,6 @@ export default function Chart(props: Props) {
       enabled: false,
       showTooltips: false,
     },
-
     plugins: {
       datalabels: {
         anchor: 'end',
@@ -68,7 +72,7 @@ export default function Chart(props: Props) {
   return (
     <div className="chart-wrapper">
       <div className="chart">
-        <Bar data={data} width={200} height={300} options={options} />
+        <Bar data={data} options={options} />
       </div>
       <div className="label">{props.chartLabel}</div>
     </div>
