@@ -72,7 +72,7 @@ export default function Chart(props: Props) {
   return (
     <div className="chart-wrapper">
       <div className="chart">
-        <Bar data={data} options={options} />
+        <Bar data={data} height={300} options={options} />
       </div>
       <div className="label">{props.chartLabel}</div>
     </div>
